@@ -176,7 +176,7 @@ def CreateWidgets():
 def DestinationBrowse():
     destinationdirectory = filedialog.askdirectory(initialdir="")
     WriteSavePath(destinationdirectory)
-    root.destinationText.insert('1', destinationdirectory)
+    root.destinationText.replace('1', destinationdirectory)
     
 # Write the path in the savePath file
 def WriteSavePath(message):
